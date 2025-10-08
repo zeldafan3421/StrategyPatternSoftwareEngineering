@@ -1,4 +1,7 @@
 public interface DietBehavior 
 {
-    public void eat();
+    public default void eat()
+    {
+        System.out.println("Unimplemented behavior.");
+    }
 }

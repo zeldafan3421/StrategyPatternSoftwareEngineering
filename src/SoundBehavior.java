@@ -1,4 +1,7 @@
 public interface SoundBehavior 
 {
-    public void makeSound();
+    public default void makeSound()
+    {
+        System.out.println("Unimplemented behavior.");
+    }
 }

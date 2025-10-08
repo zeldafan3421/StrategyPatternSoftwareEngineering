@@ -1,4 +1,7 @@
 public interface MovementBehavior 
 {
-    public void move();
+    public default void move()
+    {
+        System.out.println("Unimplemented behavior.");
+    }
 }
