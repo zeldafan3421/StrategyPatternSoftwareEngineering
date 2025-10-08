@@ -30,8 +30,18 @@ public abstract class Animal
         dietBehavior.eat();
     }
 
-    public void setDietBehavior()
+    public void setDietBehavior(DietBehavior dietBehavior)
     {
-        
+        this.dietBehavior = dietBehavior;
+    }
+
+    public void setMovementBehavior(SoundBehavior soundBehavior)
+    {
+        this.soundBehavior = soundBehavior;
+    }
+
+    public void setSoundBehavior(MovementBehavior  movementBehavior)
+    {
+        this.movementBehavior = movementBehavior;
     }
 }
